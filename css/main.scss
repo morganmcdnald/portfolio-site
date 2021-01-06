@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.s1 {
+  background: url("../images/landing.jpg");
+  background-size: cover;
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: white;
+  }
+}
+
+.s2 {
+  //   background: url("../images/about.jpg");
+  //   background-size: cover;
+  background-color: #b9a9f7;
+}
+
+.s3 {
+  background: url("../images/portfolio.jpg");
+  background-size: cover;
+}
+
+.s4 {
+  background-color: #b9a9f7;
+}
+
+span {
+  background: white !important;
+}
+
+.fp-slidesNav.fp-bottom {
+  margin-left: 1em !important;
+}
