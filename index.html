@@ -10,83 +10,72 @@
       integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
       crossorigin="anonymous"
     /> -->
+    <script
+      src="https://kit.fontawesome.com/4522d38a08.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/logo.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- <div class="section s1">
-      <h1>MORGAN MCDONALD</h1>
-      <h2>DEVELOPER. DESIGNER. FREELANCER. STUDENT.</h2>
-    </div>
+    <!-- NavBar -->
 
-    <div class="section s2">
-      <h1>About</h1>
-      <div data-aos="fade-right">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-          quam aperiam eaque pariatur dolor non aut nesciunt dicta quis et.
-        </p>
+    <header class="main-header">
+      <div class="logo">
+        <a href="#">MORGAN<span>MCDONALD</span></a>
       </div>
 
-      <div data-aos="fade-right">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          sint!
-        </p>
-      </div>
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="menu-icon__line"></span>
+      </label>
 
-      <div data-aos="fade-right">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          placeat pariatur quisquam porro perspiciatis odio non laboriosam. At
-          id quibusdam obcaecati dolorem velit accusantium veritatis?
-        </p>
-      </div>
-    </div>
-
-    <div class="section s3">
-      <h1>Portfolio</h1>
-    </div>
-
-    <div class="section s4">
-      <h1>Contact</h1>
-    </div> -->
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-link">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
 
     <div id="fullPageWrapper">
-      <div class="section landing">
+      <div class="section" id="landing">
         <h1>MORGAN MCDONALD</h1>
         <h2>DEVELOPER. DESIGNER. FREELANCER. STUDENT.</h2>
+        <div class="social-icons">
+          <a href="https://twitter.com/morganmcdee13"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://github.com/morganmcdnald/"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/mmdesigns.png/?hl=en"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
       </div>
 
-      <div class="section about">
+      <div class="section" id="about">
         <h1>About Me</h1>
       </div>
 
-      <div class="section portfolio">
+      <div class="section" id="portfolio">
         <h1>My Portfolio</h1>
       </div>
 
-      <div class="section contact">
+      <div class="section" id="contact">
         <h1>Contact Me</h1>
       </div>
     </div>
-
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
-      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
-      crossorigin="anonymous"
-    ></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-      // new fullpage("#fullPage", {
-      //   autoScrolling: true,
-      //   navigation: true,
-      //   navigationTooltips: ["Home", "About", "Portfolio"],
-      //   scrollingSpeed: 1500,
-      //   controlArrows: false,
-      //   slidesNavigation: true,
-      // });
     </script>
   </body>
 </html>

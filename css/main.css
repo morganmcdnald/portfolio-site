@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -41,14 +45,14 @@ h2 {
   letter-spacing: 0.5rem;
 }
 
-.landing h1 {
+#landing h1 {
   letter-spacing: 0.5rem;
   font-size: 4.2rem;
 }
 
-.landing {
+#landing {
   height: 100vh;
-  background: url("../images/landing.jpg");
+  background: url("../images/landingBlur.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -57,17 +61,316 @@ h2 {
   line-height: 2.5rem;
 }
 
-.about {
+#landing .social-icons {
+  text-align: center;
+  width: 100vw;
+  padding-top: 1.5rem;
+  padding-right: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+#landing .social-icons i {
+  font-size: 2rem;
+  color: white;
+  padding: 0 1.2rem;
+  transition: color .2s;
+}
+
+#landing .social-icons i:hover {
+  color: rgb(143, 119, 230);
+}
+
+#about {
   background-color: #b9a9f7;
   height: 100vh;
 }
 
-.portfolio {
+#portfolio {
   background-color: #d19eee;
   height: 125vh;
 }
 
-.contact {
+#contact {
   background-color: #b9a9f7;
   height: 75vh;
+}
+
+.logo a {
+  font-weight: 100;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+/* Nav Bar */
+.main-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
+  padding: 0 5vw;
+  color: #fff;
+  background: transparent;
+  z-index: 1;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.main-header .menu-icon {
+  position: relative;
+  padding: 26px 10px;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.main-header .menu-icon .menu-icon__line {
+  display: block;
+  position: relative;
+  background: #fff;
+  height: 2px;
+  width: 20px;
+  border-radius: 4px;
+}
+
+.main-header .menu-icon .menu-icon__line::before,
+.main-header .menu-icon .menu-icon__line::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background: #fff;
+  transition: background .8s ease;
+}
+
+.main-header .menu-icon .menu-icon__line::before {
+  transform: translateY(-5px);
+}
+
+.main-header .menu-icon .menu-icon__line::after {
+  transform: translateY(5px);
+}
+
+.main-header .menu-btn {
+  display: none;
+}
+
+.main-header .scrolled {
+  height: 700px;
+  background-color: #7629f2;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links .nav-link a {
+  margin: .2rem;
+  padding: .75rem 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  position: relative;
+}
+
+.nav-links .nav-link a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-links .nav-link a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+@media screen and (max-width: 768px) {
+  .main-header .menu-icon {
+    display: block;
+  }
+
+  .main-header .menu-icon .menu-icon__line {
+    animation: closedMid 0.8s backwards;
+    animation-direction: reverse;
+  }
+
+  .main-header .menu-icon .menu-icon__line::before {
+    animation: closedTop 0.8s backwards;
+    animation-direction: reverse;
+  }
+
+  .main-header .menu-icon .menu-icon__line::after {
+    animation: closedBtm 0.8s backwards;
+    animation-direction: reverse;
+  }
+
+  .main-header .nav-links {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10rem 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 2rem;
+    color: #fff;
+    background: #272727;
+    transition:
+      opacity .8s,
+      clip-path .7s;
+    clip-path: circle(200px at top right);
+  }
+
+  .main-header .nav-links .nav-link {
+    opacity: 0;
+    transform: translateX(100%);
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-header .nav-links .nav-link a {
+    display: block;
+    padding: 2rem 0;
+  }
+
+  .main-header .menu-btn:checked ~ .nav-links {
+    opacity: 1;
+    clip-path: circle(100% at center);
+  }
+
+  .main-header .menu-btn:checked ~ .nav-links .nav-link {
+    opacity: 1;
+    transform: translateX(0);
+    transition:
+      opacity ease-in-out,
+      transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(1) {
+    transition-delay: .4s;
+  }
+
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(2) {
+    transition-delay: .5s;
+  }
+
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(3) {
+    transition-delay: .6s;
+  }
+
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(4) {
+    transition-delay: .7s;
+  }
+
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line {
+    animation: openMid 0.8s forwards;
+  }
+
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::before {
+    animation: openTop 0.8s forwards;
+  }
+
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::after {
+    animation: openBtm 0.8s forwards;
+  }
+
+  @keyframes openTop {
+    0% {
+      transform: translateY(-5px)
+      rotate(0deg);
+    }
+    50% {
+      transform: translateY(0px)
+      rotate(0deg);
+    }
+    100% {
+      transform: translateY(0px)
+      rotate(90deg);
+    }
+  }
+
+  @keyframes openMid {
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+
+  @keyframes openBtm {
+    0% {
+      transform: translateY(5px)
+      rotate(0deg);
+    }
+    50% {
+      transform: translateY(0px)
+      rotate(0deg);
+    }
+    100% {
+      transform: translateY(0px)
+      rotate(90deg);
+    }
+  }
+
+  @keyframes closedTop {
+    0% {
+      transform: translateY(-5px)
+      rotate(0deg);
+    }
+    50% {
+      transform: translateY(0px)
+      rotate(0deg);
+    }
+    100% {
+      transform: translateY(0px)
+      rotate(90deg);
+    }
+  }
+
+  @keyframes closedMid {
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+
+  @keyframes closedBtm {
+    0% {
+      transform: translateY(5px)
+      rotate(0deg);
+    }
+    50% {
+      transform: translateY(0px)
+      rotate(0deg);
+    }
+    100% {
+      transform: translateY(0px)
+      rotate(90deg);
+    }
+  }
+
 }
