@@ -4,59 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morgan McDonald | Home</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
       integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
       crossorigin="anonymous"
-    />
+    /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div id="fullPage">
-      <div class="section s1">
+    <!-- <div class="section s1">
+      <h1>MORGAN MCDONALD</h1>
+      <h2>DEVELOPER. DESIGNER. FREELANCER. STUDENT.</h2>
+    </div>
+
+    <div class="section s2">
+      <h1>About</h1>
+      <div data-aos="fade-right">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          quam aperiam eaque pariatur dolor non aut nesciunt dicta quis et.
+        </p>
+      </div>
+
+      <div data-aos="fade-right">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+          sint!
+        </p>
+      </div>
+
+      <div data-aos="fade-right">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          placeat pariatur quisquam porro perspiciatis odio non laboriosam. At
+          id quibusdam obcaecati dolorem velit accusantium veritatis?
+        </p>
+      </div>
+    </div>
+
+    <div class="section s3">
+      <h1>Portfolio</h1>
+    </div>
+
+    <div class="section s4">
+      <h1>Contact</h1>
+    </div> -->
+
+    <div id="fullPageWrapper">
+      <div class="section landing">
         <h1>MORGAN MCDONALD</h1>
         <h2>DEVELOPER. DESIGNER. FREELANCER. STUDENT.</h2>
       </div>
 
-      <div class="section s2">
-        <h1>About</h1>
+      <div class="section about">
+        <h1>About Me</h1>
       </div>
 
-      <div class="section s3">
-        <!-- <h1>Portfolio</h1> -->
-        <div class="slide">
-          <h1>Project 1</h1>
-        </div>
-
-        <div class="slide">
-          <h1>Project 2</h1>
-        </div>
-
-        <div class="slide">
-          <h1>Project 3</h1>
-        </div>
+      <div class="section portfolio">
+        <h1>My Portfolio</h1>
       </div>
 
-      <div class="section s4">
-          <h1>Contact</h1>
+      <div class="section contact">
+        <h1>Contact Me</h1>
       </div>
     </div>
 
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
       integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      new fullpage("#fullPage", {
-        autoScrolling: true,
-        navigation: true,
-        navigationTooltips: ["Home", "About", "Portfolio"],
-        scrollingSpeed: 1500,
-        controlArrows: false,
-        slidesNavigation: true,
-      });
+      AOS.init();
+      // new fullpage("#fullPage", {
+      //   autoScrolling: true,
+      //   navigation: true,
+      //   navigationTooltips: ["Home", "About", "Portfolio"],
+      //   scrollingSpeed: 1500,
+      //   controlArrows: false,
+      //   slidesNavigation: true,
+      // });
     </script>
   </body>
 </html>

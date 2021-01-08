@@ -1,47 +1,73 @@
+/* #############################################
+#############################################
+        DEFINNING THE BREAKPOINTS
+#############################################
+320px — 480px: MOBILES
+481px — 768px: TABLETS
+769px — 1024px: SMALL SCREENS / LAPTOPS
+1025px — 1200px: LARGE SCREENS / DESKTOP 
+1201px and more —  XL SCREENS / TV
+############################################# */
+
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-h1 {
+
+/* BASIC RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
   text-align: center;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
-.s1 {
-  background: url("../images/landing.jpg");
-  background-size: cover;
-}
-
-.s1 h1 {
-  font-size: 4.2rem;
-  padding: 0 3rem;
-  letter-spacing: .5rem;
-}
-
-.s1 h2 {
-  font-family: "Montserrat", sans-serif;
+h2 {
   text-align: center;
   color: white;
   font-size: 1.75rem;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
 }
 
-.s2 {
-  background-color: #b9a9f7;
+.landing h1 {
+  letter-spacing: 0.5rem;
+  font-size: 4.2rem;
 }
 
-.s3 {
-  background: url("../images/portfolio.jpg");
+.landing {
+  height: 100vh;
+  background: url("../images/landing.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5rem;
 }
 
-.s4 {
+.about {
   background-color: #b9a9f7;
+  height: 100vh;
 }
 
-span {
-  background: white !important;
+.portfolio {
+  background-color: #d19eee;
+  height: 125vh;
 }
 
-.fp-slidesNav.fp-bottom {
-  margin-left: 1em !important;
+.contact {
+  background-color: #b9a9f7;
+  height: 75vh;
 }
-/*# sourceMappingURL=main.css.map */
