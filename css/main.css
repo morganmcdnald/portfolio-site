@@ -59,12 +59,26 @@ h1 {
   height: 100vh;
   background: url("../images/landingBlurComp.png");
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 2.5rem;
 }
+
+@media screen and (max-width: 374px) {
+  #landing {
+    background: url("../images/landingBlurSmall.png");
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #landing {
+    background-position: left;
+  }
+}
+
 
 #landing .social-icons {
   text-align: center;
