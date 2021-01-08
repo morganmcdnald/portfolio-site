@@ -38,16 +38,21 @@ h1 {
   margin: 0;
 }
 
-h2 {
+#landing h2 {
   text-align: center;
   color: white;
   font-size: 1.75rem;
   letter-spacing: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 #landing h1 {
   letter-spacing: 0.5rem;
   font-size: 4.2rem;
+  line-height: 3.75rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 #landing {
@@ -65,8 +70,8 @@ h2 {
   text-align: center;
   width: 100vw;
   padding-top: 1.5rem;
-  padding-right: 3.5rem;
   padding-bottom: 1rem;
+  letter-spacing: 0.5rem;
 }
 
 #landing .social-icons i {
@@ -80,19 +85,186 @@ h2 {
   color: rgb(143, 119, 230);
 }
 
+@media screen and (max-width: 1100px) {
+  #landing h1 {
+    font-size: 3rem;
+  }
+
+  #landing h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 746px) {
+  #landing h1 {
+    font-size: 2.5rem;
+  }
+
+  #landing h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #landing h1 {
+    font-size: 2.5rem;
+  }
+
+  #landing h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #landing h1 {
+    font-size: 2rem;
+  }
+
+  #landing h2 {
+    font-size: .75rem;
+  }
+
+  #landing .social-icons i {
+    font-size: 1.5rem;
+  }
+}
+
+
 #about {
   background-color: #b9a9f7;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about p {
+  text-align: center;
+  padding: 1rem 5rem;
+}
+
+#about h1 {
+  padding-top: 2.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: .5rem;
 }
 
 #portfolio {
   background-color: #d19eee;
-  height: 125vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio h3 {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  #about p {
+    padding: 1rem 3rem;
+  }
+
+  #portfolio h3 {
+    padding: 1rem 3rem;
+  }
+
+  #contact p {
+    padding: 1rem 3rem;
+    text-align: center;
+  }
 }
 
 #contact {
   background-color: #b9a9f7;
-  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* POST SLIDER */
+
+.post-slider {
+  position: relative;
+}
+
+.post-slider .slider-title {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.post-slider .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+  width: 85%;
+  height: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.post-slider .post-wrapper .post {
+  max-width: 30rem;
+  height: 30rem;
+  margin: 0px 10px;
+  display: inline-block;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+
+@media screen and (min-width: 1860px) {
+  .post-slider .post-wrapper .post {
+    max-width: 35rem;
+  }
+}
+
+.post-slider .post-wrapper .post .post-info {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+  width: 100%;
+  object-fit: cover;
+  height: 15rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .logo a {

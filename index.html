@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morgan McDonald | Home</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
-      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
-      crossorigin="anonymous"
-    /> -->
     <script
       src="https://kit.fontawesome.com/4522d38a08.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="images/logo.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
@@ -63,19 +69,237 @@
 
       <div class="section" id="about">
         <h1>About Me</h1>
+        <p>
+          I am a Computer Science Graduate from Glasgow qualified to BA degree
+          level who is currently progressing towards becoming a Web Developer
+          and Designer. My passion lies within the front-end section, focusing
+          on design. I am currently undertaking a HND qualification within Web
+          Engineering, with sights to complete. I am a solid multitasker and
+          have a strong attention to detail, as well as experience brought with
+          me from my educational and professional careers.
+        </p>
+
+        <p>Download CV</p>
+
+        <h2>My Skills</h2>
+        <p>list of my skills here</p>
+
+        <h2>My Story So Far</h2>
+        <p>timeline here</p>
       </div>
 
-      <div class="section" id="portfolio">
-        <h1>My Portfolio</h1>
+      <!-- Post Slider -->
+      <div class="post-slider" id="portfolio">
+        <h1 class="slider-title">My Portfolio</h1>
+        <h3>Below I have included some examples of my work that demonstrate my skills</h3>
+        <br>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+
+        <div class="post-wrapper">
+          <div class="post">
+            <img
+              src="https://img1.thelist.com/img/gallery/the-entire-greys-anatomy-timeline-explained/intro-1593622282.jpg"
+              alt=""
+              class="slider-image"
+            />
+            <div class="post-info">
+              <h4>
+                <a href="#">Bioregioning Clyde Website</a>
+              </h4>
+              Tech Used:
+              <div class="tech">
+                <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+              </div>
+              <br />
+              <br />
+              <i class="fas fa-tag"></i> Personal
+            </div>
+          </div>
+
+          <div class="post">
+            <img
+              src="https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Famazonadviser.com%2Ffiles%2Fimage-exchange%2F2017%2F07%2Fie_60439-850x560.jpeg"
+              alt=""
+              class="slider-image"
+            />
+            <div class="post-info">
+              <h4>
+                <a href="#">Bike King Borders Website</a>
+              </h4>
+              Tech Used:
+              <div class="tech">
+                <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+              </div>
+              <br />
+              <br />
+              <i class="fas fa-tag"></i> College
+            </div>
+          </div>
+
+          <div class="post">
+            <img
+              src="https://www.nme.com/wp-content/uploads/2018/08/hbo-sharp-objects-netflix-streaming.jpeg"
+              alt=""
+              class="slider-image"
+            />
+            <div class="post-info">
+              <h4>
+                <a href="#">Cartha Cobras Website</a>
+              </h4>
+              Tech Used:
+              <div class="tech">
+                <i class="fab fa-wordpress"></i> <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i>
+              </div>
+              <br />
+              <br />
+              <i class="fas fa-tag"></i> Personal
+            </div>
+          </div>
+
+          <div class="post">
+            <img
+              src="https://nchschant.com/wp-content/uploads/2020/05/hollywood-coverphoto-900x506.jpg"
+              alt=""
+              class="slider-image"
+            />
+            <div class="post-info">
+              <h4>
+                <a href="#">SmolScreen Web App</a>
+              </h4>
+              Tech Used:
+              <div class="tech">
+                <i class="fab fa-python"></i> <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i>
+              </div>
+              <br />
+              <br />
+              <i class="fas fa-tag"></i> Personal
+            </div>
+          </div>
+
+          <div class="post">
+            <img
+              src="https://rhstoday.com/wp-content/uploads/2019/11/AHHHHH-900x506.jpg"
+              alt=""
+              class="slider-image"
+            />
+            <div class="post-info">
+              <h4>
+                <a href="#">Dickinson</a>
+              </h4>
+              Tech Used:
+              <div class="tech">
+                <i class="fab fa-figma"></i>
+              </div>
+              <br />
+              <br />
+              <i class="fas fa-tag"></i> Design
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- // Post Slider -->
 
       <div class="section" id="contact">
         <h1>Contact Me</h1>
+
+        <form>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter Your Name..."
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter your email address.."
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Enter your message..."
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+
+        <p>Or Send Me an Email Directly: <a href="mailto:someone@example.com">Email Address</a></p>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+    ></script>
     <script>
-      AOS.init();
+      $(document).ready(function () {
+        $(".menu-toggle").on("click", function () {
+          $(".nav").toggleClass("showing");
+          $(".nav ul").toggleClass("showing");
+        });
+
+        $(".post-wrapper").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          nextArrow: $(".next"),
+          prevArrow: $(".prev"),
+          responsive: [
+            {
+              breakpoint: 1800,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
     </script>
   </body>
 </html>
