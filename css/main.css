@@ -10,10 +10,18 @@ h1 {
   background-size: cover;
 }
 
+.s1 h1 {
+  font-size: 4.2rem;
+  padding: 0 3rem;
+  letter-spacing: .5rem;
+}
+
 .s1 h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
+  font-size: 1.75rem;
+  letter-spacing: .5rem;
 }
 
 .s2 {
