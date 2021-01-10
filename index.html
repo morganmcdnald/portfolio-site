@@ -3,310 +3,506 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Morgan McDonald | Home</title>
-    <script
-      src="https://kit.fontawesome.com/4522d38a08.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- ===== SWIPER CSS ===== -->
+    <link rel="stylesheet" href="" />
+
+    <!-- ==== BOX ICONS ===== -->
     <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-      crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-    />
+
+    <!-- ===== TAB ICON ===== -->
     <link rel="icon" href="images/logo.png" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Morgan McDonald - Web Designer & Developer Based in Glasgow</title>
   </head>
   <body>
+    <!-- ===== SCROLL TOP ===== -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bxs-chevron-up scrolltop__icon"></i>
+    </a>
 
-    <div class="loader-container">
-      <div class="sk-cube-grid">
-        <div class="sk-cube sk-cube1"></div>
-        <div class="sk-cube sk-cube2"></div>
-        <div class="sk-cube sk-cube3"></div>
-        <div class="sk-cube sk-cube4"></div>
-        <div class="sk-cube sk-cube5"></div>
-        <div class="sk-cube sk-cube6"></div>
-        <div class="sk-cube sk-cube7"></div>
-        <div class="sk-cube sk-cube8"></div>
-        <div class="sk-cube sk-cube9"></div>
-      </div>
-    </div>
-    <!-- NavBar -->
+    <!-- ===== HEADER ===== -->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="" class="nav__logo">MORGAN<span>MCDONALD</span></a>
 
-    <header class="main-header">
-      <div class="logo">
-        <a href="#">MORGAN<span>MCDONALD</span></a>
-      </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-      <input type="checkbox" class="menu-btn" id="menu-btn" />
-      <label for="menu-btn" class="menu-icon">
-        <span class="menu-icon__line"></span>
-      </label>
-
-      <ul class="nav-links">
-        <li class="nav-link">
-          <a href="#about">About</a>
-        </li>
-        <li class="nav-link">
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-link">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu-alt-right"></i>
+        </div>
+      </nav>
     </header>
 
-    <div id="fullPageWrapper">
-      <div class="section" id="landing">
-        <h1>MORGAN MCDONALD</h1>
-        <h2>DEVELOPER. DESIGNER. FREELANCER. STUDENT.</h2>
-        <div class="social-icons">
-          <a href="https://twitter.com/morganmcdee13"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://github.com/morganmcdnald/"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.instagram.com/mmdesigns.png/?hl=en"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-      </div>
-
-      <div class="section" id="about">
-        <h1>About Me</h1>
-        <p>
-          I am a Computer Science Graduate from Glasgow qualified to BA degree
-          level who is currently progressing towards becoming a Web Developer
-          and Designer. My passion lies within the front-end section, focusing
-          on design. I am currently undertaking a HND qualification within Web
-          Engineering, with sights to complete. I am a solid multitasker and
-          have a strong attention to detail, as well as experience brought with
-          me from my educational and professional careers.
-        </p>
-
-        <p>Download CV</p>
-
-        <h2>My Skills</h2>
-        <p>
-          HTML, CSS, JS, Python, Java, Django, SASS, jQuery, WordPress, PHP, Vue
-        </p>
-        <p>
-          Figma, Adobe Photoshop, Adobe Illustrator, Adobe XD, Adobe After
-          Effects
-        </p>
-
-        <h2>My Story So Far</h2>
-        <p>timeline here</p>
-      </div>
-
-      <div id="simpleModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="closeBtn">&times;</span>
-            <h2>Bioregioning Clyde Website</h2>
+    <main class="l-main">
+      <!-- ===== HOME ===== -->
+      <section class="home" id="home">
+        <div class="home__container bd-container ds-grid">
+          <div class="home__text">
+            <h1 class="home__title">MORGAN MCDONALD</h1>
+          <h2 class="home__subtitle">DEVELOPER. DESIGNER. FREELANCER. STUDENT.</h2>
           </div>
-          <div class="modal-body">
-            <img
-              src="https://img1.thelist.com/img/gallery/the-entire-greys-anatomy-timeline-explained/intro-1593622282.jpg"
-              alt=""
-              class="slider-image"
-            />
-            <p>
-              Bioregioning Clyde is a local company for whom I done my first
-              freelance project. It is currently around 80% complete, we are
-              only waiting on the company supplying the final parts of the
-              content in order to finish completely.
+          
+          <div class="social-icons home-social-icons">
+            <a href="https://twitter.com/morganmcdee13"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://github.com/morganmcdnald/"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://www.instagram.com/mmdesigns.png/?hl=en"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section class="about section bd-container" id="about">
+        <span class="section-subtitle">My History</span>
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about__container">
+          <div class="about__data bd-grid">
+            <p class="about__description">
+              <span>Small Bio<br /></span>I am a Computer Science Graduate from
+              Glasgow qualified to BA degree level who is currently progressing
+              towards becoming a Front-End Web Developer and Designer. My
+              passion lies within the front-end section, focusing on design. I
+              am currently undertaking a HND qualification within Web
+              Engineering, with sights to complete. I am a solid multitasker and
+              have a strong attention to detail, as well as experience brought
+              with me from my educational and professional careers.
             </p>
-            <h4>Technologies Used</h4>
-            <div class="tech">
-              <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js"></i>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <div class="modal-links">
-              <a href="https://github.com/M2WebSolutions/BioregioningClyde">Source Code</a>
-              <a href="https://bioregioningclydetest.netlify.app/">Live Site</a>
+
+            <a
+              href="/assets/pdf/MorganMcDonaldCV.pdf"
+              download
+              class="button-link"
+              >Download My CV<i class="bx bx-right-arrow-alt"></i
+            ></a>
+
+            <p class="about__description">
+              <span>My Skils</span><br /><i class="bx bxl-html5"></i>
+              <i class="bx bxl-css3"></i>
+              <i class="bx bxl-javascript"></i>
+              <i class="bx bxl-python"></i>
+              Java
+              <i class="bx bxl-django"></i>
+              <i class="bx bxl-sass"></i>
+              <i class="bx bxl-jquery"></i>
+              <i class="bx bxl-wordpress"></i>
+              PHP
+              <i class="bx bxl-vuejs"></i>
+            </p>
+
+            <p class="about__description">
+              <i class="bx bxl-figma"></i>
+              <i class="bx bxl-adobe"></i>
+              Photoshop Illustrator XD After Effects
+            </p>
+
+            <p class="about__description">
+              <span>My Story So Far</span>
+              <br />
+              Click along the timeline to read about my academic journey.
+            </p>
+
+            <div class="flex-parent">
+              <div class="input-flex-container">
+                <div class="input active">
+                  <span data-year="June 2015" data-info="Secondary"></span>
+                </div>
+                <div class="input">
+                  <span data-year="Aug 2015" data-info="HND Comp Sci"></span>
+                </div>
+                <div class="input">
+                  <span data-year="June 2017" data-info="HND Complete"></span>
+                </div>
+                <div class="input">
+                  <span data-year="Aug 2017" data-info="BSc Comp Sci"></span>
+                </div>
+                <div class="input">
+                  <span data-year="June 2019" data-info="BSc Complete"></span>
+                </div>
+                <div class="input">
+                  <span data-year="Aug 2019" data-info="PGDE Secondary"></span>
+                </div>
+                <div class="input">
+                  <span data-year="Jan 2020" data-info="PGDE End"></span>
+                </div>
+                <div class="input">
+                  <span data-year="Aug 2020" data-info="HND Start"></span>
+                </div>
+                <div class="input">
+                  <span data-year="June 2021" data-info="HND Complete"></span>
+                </div>
+                <div class="input">
+                  <span data-year="2021-?" data-info="Future"></span>
+                </div>
+              </div>
+              <div class="description-flex-container">
+                <p class="active">
+                  Finished Secondary School, Leaving with 6 Highers and 1
+                  Advanced Higher
+                </p>
+                <p>
+                  In 2015 I began my first HND, starting with Cyber Security
+                  before settling on Computer Science.
+                </p>
+                <p>
+                  In June 2017 I finished up my HND where I left with an A in
+                  both Graded Units.
+                </p>
+                <p>
+                  The following August I started my BSc Computing Science at the
+                  University of Glasgow, fast tracking due to my HND.
+                </p>
+                <p>
+                  2 years later I graduated university with a BSc in Computing
+                  Science.
+                </p>
+                <p>
+                  That August I began a PGDE in Secondary Education at the
+                  University of Glasgow with views to become a Computing
+                  teacher.
+                </p>
+                <p>
+                  After 4 months I left the PGDE course in January 2020 after
+                  realising I was going down the wrong route. Used the following
+                  months to work and learn web development skills.
+                </p>
+                <p>
+                  In August 2020 I began my HND Web Engineering in order to
+                  learn more about web design and development.
+                </p>
+                <p>
+                  I am scheduled to finish my first year of my HND in June 2021.
+                  Up next is year 2 or full time employment.
+                </p>
+                <p>
+                  After completing this year at college, my aim is to find a
+                  full time job in Front-End Development or Design.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Post Slider -->
-      <div class="post-slider" id="portfolio">
-        <h1 class="slider-title">My Portfolio</h1>
-        <h3>
-          Below I have included some examples of my work that demonstrate my
-          skills
-        </h3>
-        <br />
-        <i class="fas fa-chevron-left prev"></i>
-        <i class="fas fa-chevron-right next"></i>
+      <!-- ===== SERVICES ===== -->
+      <section class="services section bd-container" id="services">
+        <span class="section-subtitle">What I Offer</span>
+        <h2 class="section-title">Services</h2>
 
-        <div class="post-wrapper">
-          <div class="post" id="modalBtn">
-            <img
-              src="https://img1.thelist.com/img/gallery/the-entire-greys-anatomy-timeline-explained/intro-1593622282.jpg"
-              alt=""
-              class="slider-image"
-            />
-            <div class="post-info" id="modalBtn">
-              <h4>
-                <a>Bioregioning Clyde Website</a>
-              </h4>
-              Tech Used:
-              <div class="tech">
-                <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-              </div>
-              <br />
-              <br />
-              <i class="fas fa-tag"></i> Personal
+        <div class="services__container bd-grid">
+          <div class="services__data">
+            <i class="bx bx-pen services__icon"></i>
+            <h3 class="services_title">UI/UX Design</h3>
+            <p class="services__description">
+              I can design you a site or app based on your requirements,
+              progressing from wireframe to functional prototype.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-code-alt services__icon"></i>
+            <h3 class="services_title">Web Development</h3>
+            <p class="services__description">
+              With my design or your own, I can build you a fully functional
+              website either from scratch or using WordPress.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-data services__icon"></i>
+            <h3 class="services_title">Website Management</h3>
+            <p class="services__description">
+              After I build your site, I can optionally handle the hosting and
+              management of the site for an additional cost.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PORTFOLIO ===== -->
+      <section class="portfolio section bd-container" id="portfolio">
+        <span class="section-subtitle">My Recent Works</span>
+        <h2 class="section-title">Portfolio</h2>
+
+        <div class="portfolio__nav">
+          <span class="portfolio__item active-portfolio" data-filter="all"
+            >All</span
+          >
+          <span class="portfolio__item" data-filter=".design">UI/UX</span>
+          <span class="portfolio__item" data-filter=".personal"
+            >Personal Projects</span
+          >
+          <span class="portfolio__item" data-filter=".college"
+            >College Projects</span
+          >
+        </div>
+
+        <div class="portfolio__container bd-grid">
+          <div class="portfolio__content mix design">
+            <a href="#"
+              ><img
+                src="/assets/img/Portfolio-Images/Dickinson.jpg"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">UI Design</span>
+              <a href="#"
+                ><h2 class="portfolio__title">Dickinson UI Design</h2></a
+              >
+              <a href="#" class="button button-link portfolio-button"
+                >View Details<i class="bx bx-right-arrow-alt"></i
+              ></a>
             </div>
           </div>
 
-          <div class="post">
-            <img
-              src="https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Famazonadviser.com%2Ffiles%2Fimage-exchange%2F2017%2F07%2Fie_60439-850x560.jpeg"
-              alt=""
-              class="slider-image"
-            />
-            <div class="post-info">
-              <h4>
-                <a href="#">Bike King Borders Website</a>
-              </h4>
-              Tech Used:
-              <div class="tech">
-                <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-              </div>
-              <br />
-              <br />
-              <i class="fas fa-tag"></i> College
+          <div class="portfolio__content mix personal">
+            <a href="#"
+              ><img
+                src="/assets/img/Portfolio-Images/Olivia-Rodrigo.jpg"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">Personal Project</span>
+              <a href="#"
+                ><h2 class="portfolio__title">Bioregioning Clyde Site</h2></a
+              >
+              <a href="#" class="button button-link portfolio-button"
+                >View Details<i class="bx bx-right-arrow-alt"></i
+              ></a>
             </div>
           </div>
 
-          <div class="post">
-            <img
-              src="https://www.nme.com/wp-content/uploads/2018/08/hbo-sharp-objects-netflix-streaming.jpeg"
-              alt=""
-              class="slider-image"
-            />
-            <div class="post-info">
-              <h4>
-                <a href="#">Cartha Cobras Website</a>
-              </h4>
-              Tech Used:
-              <div class="tech">
-                <i class="fab fa-wordpress"></i> <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i>
-              </div>
-              <br />
-              <br />
-              <i class="fas fa-tag"></i> Personal
+          <div class="portfolio__content mix college">
+            <a href="#"
+              ><img
+                src="/assets/img/Portfolio-Images/Taylor-Swift.jpg"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">College Project</span>
+              <a href="#"
+                ><h2 class="portfolio__title">Bike King Borders Site</h2></a
+              >
+              <a href="#" class="button button-link portfolio-button"
+                >View Details<i class="bx bx-right-arrow-alt"></i
+              ></a>
             </div>
           </div>
 
-          <div class="post">
-            <img
-              src="https://nchschant.com/wp-content/uploads/2020/05/hollywood-coverphoto-900x506.jpg"
-              alt=""
-              class="slider-image"
-            />
-            <div class="post-info">
-              <h4>
-                <a href="#">SmolScreen Web App</a>
-              </h4>
-              Tech Used:
-              <div class="tech">
-                <i class="fab fa-python"></i> <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i>
-              </div>
-              <br />
-              <br />
-              <i class="fas fa-tag"></i> Personal
+          <div class="portfolio__content mix design">
+            <a href="#"
+              ><img
+                src="/assets/img/Portfolio-Images/TLOU2.jpg"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">UI Design</span>
+              <a href="#"
+                ><h2 class="portfolio__title">X App UI Redesign</h2></a
+              >
+              <a href="#" class="button button-link portfolio-button"
+                >View Details<i class="bx bx-right-arrow-alt"></i
+              ></a>
             </div>
           </div>
 
-          <div class="post">
-            <img
-              src="https://rhstoday.com/wp-content/uploads/2019/11/AHHHHH-900x506.jpg"
-              alt=""
-              class="slider-image"
-            />
-            <div class="post-info">
-              <h4>
-                <a href="#">Dickinson</a>
-              </h4>
-              Tech Used:
-              <div class="tech">
-                <i class="fab fa-figma"></i>
-              </div>
-              <br />
-              <br />
-              <i class="fas fa-tag"></i> Design
+          <div class="portfolio__content mix college">
+            <a href="#"
+              ><img
+                src="/assets/img/Portfolio-Images/Sharp-Objects.jpeg"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">College Project</span>
+              <a href="#"
+                ><h2 class="portfolio__title">Cartha Cobras Rugby Site</h2></a
+              >
+              <a href="#" class="button button-link portfolio-button"
+                >View Details<i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix personal">
+            <a href="#"
+              ><img
+                src="/assets/img/Portfolio-Images/Greys.jpg"
+                alt=""
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle">Personal Project</span>
+              <a href="#"
+                ><h2 class="portfolio__title">SmolScreen Web App</h2></a
+              >
+              <a href="#" class="button button-link portfolio-button"
+                >View Details<i class="bx bx-right-arrow-alt"></i
+              ></a>
             </div>
           </div>
         </div>
-      </div>
-      <!-- // Post Slider -->
+      </section>
 
-      <div class="section" id="contact">
-        <h1>Contact Me</h1>
+      <!-- ===== CONTACT ===== -->
+      <section class="contact section bd-container" id="contact">
+        <span class="section-subtitle">For Projects</span>
+        <h2 class="section-title">Contact Me</h2>
 
-        <form>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            placeholder="Enter Your Name..."
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            placeholder="Enter your email address.."
-          />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Enter your message..."
-            required
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>
+        <div class="contact__container bd-grid">
+          <p>If you are interested in contacting me for any work, please fill in the form below and I will get back to you ASAP.</p>
 
-        <p>
-          Or Send Me an Email Directly:
-          <a href="mailto:someone@example.com">Email Address</a>
+          <form name="ContactForm" action="" class="contact__form" method="POST" data-netlify="true">
+            <div class="contact__inputs">
+              <input
+                type="text"
+                placeholder="Name"
+                class="contact__input"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="contact__input"
+                required
+              />
+            </div>
+
+            <div class="contact__inputs">
+              <input
+                type="text"
+                placeholder="Project"
+                class="contact__input"
+                required
+              />
+              <input
+                type="number"
+                placeholder="Phone Number"
+                class="contact__input"
+              />
+            </div>
+
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="7"
+              placeholder="Message"
+              class="contact__input"
+              required
+            ></textarea>
+
+            <input
+              type="submit"
+              value="Send Message"
+              class="button contact__button"
+            />
+          </form>
+
+          <p>Or Send Me an Email Directly:
+            <a href="mailto:someone@example.com">example@email.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer__container bd-container bd-grid">
+        <div class="footer__content bd-grid">
+          <div class="footer__box">
+            <h1 class="footer__title box1">MORGAN<span>MCDONALD</span></h1>
+            <p class="footer__description box1">
+              I am a freelance student Web Designer and Developer based in Glasgow, Scotland.
+            </p>
+          </div>
+
+          <div class="footer__box">
+            <ul>
+              <li class="nav__item">
+                <a href="#home" class="footer__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="footer__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="footer__link">Services</a>
+              </li>
+              <li class="nav__item">
+                <a href="#portfolio" class="footer__link">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__box">
+            <p class="footer__description">Social Media Links</p>
+            <div class="footer__social">
+              <a href="#" class="footer__link"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
+              <a href="#" class="footer__link"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__copy">
+          &#169; 2021 Morgan McDonald. All Rights Reserved.
         </p>
       </div>
-    </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </footer>
+
+    <!-- ===== MIXITUP FILTER ===== -->
+    <script src="/assets/js/mixitup.min.js"></script>
+
+    <!-- ===== GSAP ===== -->
+    <script src="/assets/js/gsap.min.js"></script>
+
+    <!-- ===== jQuery ===== -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
-    <script src="modal.js"></script>
+
+    <!-- ===== MAIN JS ===== -->
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
