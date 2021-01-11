@@ -1086,3 +1086,63 @@ textarea {
     min-height: 950px;
   }
 }
+
+@media screen and (max-width: 680px) {
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #f4f4f4;
+    margin: 16% auto;
+    width: 90%;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+    animation-name:modalOpen;
+    animation-duration:1s;
+  }
+  
+  .modal-header h2, .modal-footer h3 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .modal-header {
+    background-color: #b9a9f7;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 1rem .5rem;
+  }
+  
+  .modal-body img {
+    height: 25vh;
+  }
+  
+  .modal-body p {
+    padding-top: 1rem;
+  }
+  
+  .modal-body h4 {
+    font-size: 1.1rem;
+  }
+  
+  .modal-body .tech {
+    font-size: 2rem;
+  }
+  
+
+  .modal-links a {
+    padding: 0 1rem;
+  }
+  
+}
