@@ -268,6 +268,40 @@
           >
         </div>
 
+        <div id="simpleModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="closeBtn">&times;</span>
+              <h2>Bioregioning Clyde Website</h2>
+            </div>
+            <div class="modal-body">
+              <img
+                src="/assets/img/Portfolio-Images/Olivia-Rodrigo.jpg"
+                alt=""
+                class="slider-image"
+              />
+              <p>
+                Bioregioning Clyde is a local company for whom I done my first
+                freelance project. It is currently around 80% complete, we are
+                only waiting on the company supplying the final parts of the
+                content in order to finish completely.
+              </p>
+              <h4>Technologies Used</h4>
+              <div class="tech">
+                <i class='bx bxl-html5'></i>
+                <i class='bx bxl-css3'></i>
+                <i class='bx bxl-javascript'></i>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="modal-links">
+                <a href="https://github.com/M2WebSolutions/BioregioningClyde">Source Code</a>
+                <a href="https://bioregioningclydetest.netlify.app/">Live Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="portfolio__container bd-grid">
           <div class="portfolio__content mix design">
             <a href="#"
@@ -278,28 +312,23 @@
             /></a>
             <div class="portfolio__data">
               <span class="portfolio__subtitle">UI Design</span>
-              <a href="#"
-                ><h2 class="portfolio__title">Dickinson UI Design</h2></a
-              >
-              <a href="#" class="button button-link portfolio-button"
-                >View Details<i class="bx bx-right-arrow-alt"></i
+              <a><h2 class="portfolio__title">Dickinson UI Design</h2></a>
+              <a class="button button-link portfolio-button">View Details<i class="bx bx-right-arrow-alt"></i
               ></a>
             </div>
           </div>
 
           <div class="portfolio__content mix personal">
-            <a href="#"
-              ><img
+            <a><img
                 src="/assets/img/Portfolio-Images/Olivia-Rodrigo.jpg"
                 alt=""
                 class="portfolio__img"
             /></a>
-            <div class="portfolio__data">
+            <div class="portfolio__data" id="modalBtn">
               <span class="portfolio__subtitle">Personal Project</span>
-              <a href="#"
-                ><h2 class="portfolio__title">Bioregioning Clyde Site</h2></a
+              <a><h2 class="portfolio__title">Bioregioning Clyde Site</h2></a
               >
-              <a href="#" class="button button-link portfolio-button"
+              <a class="button button-link portfolio-button" id="modalBtn"
                 >View Details<i class="bx bx-right-arrow-alt"></i
               ></a>
             </div>
@@ -520,6 +549,9 @@
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
     ></script>
+
+    <!-- ===== MODAL JS ===== -->
+    <script src="/assets/js/modal.js"></script>
 
     <!-- ===== MAIN JS ===== -->
     <script src="/assets/js/main.js"></script>

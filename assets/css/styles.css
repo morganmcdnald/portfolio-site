@@ -682,6 +682,109 @@ textarea {
     font-size: .9rem;
 }
 
+
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#modalBtn {
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 3% auto;
+  width: 65%;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+  animation-name:modalOpen;
+  animation-duration:1s;
+}
+
+.modal-header h2, .modal-footer h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.modal-header {
+  background-color: #b9a9f7;
+  padding: 1rem;
+  color: white;
+}
+
+.modal-body {
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.modal-body img {
+  width: 100%;
+  object-fit: cover;
+  height: 50vh;
+}
+
+.modal-body p {
+  padding-top: 1.5rem;
+}
+
+.modal-body h4 {
+  font-size: 1.1rem;
+}
+
+.modal-body .tech {
+  font-size: 2.25rem;
+  color: #463463;
+}
+
+.modal-footer {
+  background-color: #b9a9f7;
+  padding: 1rem;
+  color: #fff;
+}
+
+.modal-links {
+  text-align: center;
+}
+
+.modal-links a {
+  padding: 0 2rem;
+  color: #463463;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color .3s;
+}
+
+.modal-links a:hover {
+  color: #fff;
+}
+
+.closeBtn {
+  color: #fff;
+  float: right;
+  font-size: 2.5rem;
+}
+
+.closeBtn:hover, closeBtn:focus {
+  color: #463463;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalOpen {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
 /* ===== MEDIA QUERIES ===== */
 @media screen and (min-width: 576px) {
   .about__container,
