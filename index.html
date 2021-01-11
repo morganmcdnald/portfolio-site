@@ -391,7 +391,12 @@
           </p>
 
           <!-- <form action="https://formspree.io/f/maylapap" method="POST" class="contact__form"> -->
-            <form name="ContactForm" class="contact__form" method="POST" data-netlify="true">
+          <form
+            name="ContactForm"
+            class="contact__form"
+            method="POST"
+            data-netlify="true"
+          >
             <div class="contact__inputs">
               <input
                 type="text"
@@ -426,10 +431,11 @@
             </div>
 
             <textarea
+              name="message"
+              id=""
               cols="0"
               rows="7"
               placeholder="Message"
-              name="message"
               class="contact__input"
               form="ContactForm"
               required
