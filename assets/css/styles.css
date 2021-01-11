@@ -298,7 +298,8 @@ img {
 
 /* ===== HOME ===== */
 .home {
-  background: url("/assets/img/landingBlurComp.png");
+  /* background: url("/assets/img/landingBlurComp.png"); */
+  background: linear-gradient(to bottom right, rgb(117, 197, 255), rgb(255, 180, 239));
   background-size: cover;
   background-position: left;
   overflow: hidden;
