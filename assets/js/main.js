@@ -117,7 +117,7 @@ function showTimeline() {
 
 // ===== GSAP ANIMATION =====
 // gsap.from('.home__text', {opacity: 0, duration: 1, delay:.5, y:75})
-gsap.from('.home__title, .home__subtitle, .home-social-icons', {opacity: 0, duration: 2, delay:.5, y:50, ease:'expo.out', stagger:.2})
+gsap.from('.home__title, .home__subtitle, .home-social-icons, .arrow-container', {opacity: 0, duration: 2, delay:.5, y:50, ease:'expo.out', stagger:.2})
 
 gsap.from('.nav__logo, .nav__toggle', {opacity: 0, duration: 2, delay:.75, y:50, ease:'expo.out', stagger:.2})
 gsap.from('.nav__item', {opacity: 0, duration: 2, delay:1, y:50, ease:'expo.out', stagger:.2})
