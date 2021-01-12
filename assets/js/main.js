@@ -100,6 +100,21 @@ $(function () {
 	});
 });
 
+
+// ===== SHOW TIMELINE =====
+function showTimeline() {
+  document.getElementById('flex-parent').style.display = "block";
+}
+
+function showTimeline() {
+  const x = document.getElementById("flex-parent");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 // ===== GSAP ANIMATION =====
 // gsap.from('.home__text', {opacity: 0, duration: 1, delay:.5, y:75})
 gsap.from('.home__title, .home__subtitle, .home-social-icons', {opacity: 0, duration: 2, delay:.5, y:50, ease:'expo.out', stagger:.2})

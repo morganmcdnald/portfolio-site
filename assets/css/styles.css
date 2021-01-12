@@ -410,10 +410,15 @@ img {
   padding: 0.75rem 1rem;
   border-radius: 0.25rem;
   transition: 0.3s;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--font-semi-bold);
+  color: #3d3d3d;
 }
 
 .button:hover {
-  background-color: var(--first-color-dark);
+  background-color: var(--active-portfolio);
+  color: #fff;
 }
 
 .button-light {
@@ -942,6 +947,10 @@ closeBtn:focus,
 }
 
 /* ===== TIMELINE ===== */
+.timeline__button {
+  display: none;
+}
+
 .flex-parent {
   display: flex;
   flex-direction: column;
@@ -1129,6 +1138,10 @@ closeBtn:focus,
     margin-top: 30px;
     text-align: center;
   }
+  .timeline__button {
+    display: block;
+  }
+
 }
 @media (max-width: 400px) {
   body {

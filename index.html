@@ -135,9 +135,11 @@
               Click along the timeline to read about my academic journey.
             </p>
 
-            <div class="flex-parent">
+            <button class="button" onclick="showTimeline()">View Timeline</button>
+
+            <div class="flex-parent" id="flex-parent">
               <div class="input-flex-container">
-                <div class="input active">
+                <div class="input">
                   <span data-year="June 2015" data-info="Secondary"></span>
                 </div>
                 <div class="input">
@@ -158,7 +160,7 @@
                 <div class="input">
                   <span data-year="Jan 2020" data-info="PGDE End"></span>
                 </div>
-                <div class="input">
+                <div class="input active">
                   <span data-year="Aug 2020" data-info="HND Start"></span>
                 </div>
                 <div class="input">
@@ -169,7 +171,7 @@
                 </div>
               </div>
               <div class="description-flex-container">
-                <p class="active">
+                <p>
                   Finished Secondary School, Leaving with 6 Highers and 1
                   Advanced Higher
                 </p>
@@ -199,7 +201,7 @@
                   realising I was going down the wrong route. Used the following
                   months to work and learn web development skills.
                 </p>
-                <p>
+                <p class="active">
                   In August 2020 I began my HND Web Engineering in order to
                   learn more about web design and development.
                 </p>
