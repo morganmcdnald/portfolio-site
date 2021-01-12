@@ -6,6 +6,7 @@
 /* ===== VARIABLES CSS ===== */
 :root {
   --header-height: 3rem;
+  --header-height-scroll: 2.9rem;
 
   /* ===== Colours ===== */
   --first-color: #88ddf7;
@@ -253,6 +254,7 @@ img {
 .scroll-header {
   background-color: #bad3e7;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: var(--header-height-scroll);
 }
 
 .scroll-header .nav__logo,
@@ -840,6 +842,10 @@ closeBtn:focus,
 
   .nav {
     height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .scroll-header .nav {
+    height: calc(var(--header-height));
   }
 
   .nav__list {
