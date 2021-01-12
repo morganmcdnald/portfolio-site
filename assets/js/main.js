@@ -108,10 +108,10 @@ function showTimeline() {
 
 function showTimeline() {
   const x = document.getElementById("flex-parent");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  if (x.style.display === "block") {
     x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }
 
