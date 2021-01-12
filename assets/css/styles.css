@@ -440,23 +440,34 @@ img {
   text-align: center;
 }
 
-.about__description span {
+.about__data span {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--first-color);
 }
 
-.about__number {
-  font-size: var(--h1-font-size);
-  color: var(--first-color);
-  display: block;
+.about__skills img {
+  /* margin: auto; */
+  height: 2.75rem;
+  width: 3.75rem;
+  
 }
 
-.about__img {
-  justify-self: center;
-  width: 220px;
-  border-radius: 0.5rem;
+.about__skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
+.about__description i, .about__skills i, .about__skills img {
+  font-size: 2.75rem;
+  padding: 0 .5rem;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
 
 /* ===== SERVICES ===== */
 .services__data {
@@ -741,14 +752,20 @@ textarea::placeholder {
 
 .modal-header h2,
 .modal-footer h3 {
-  margin: 0;
   text-align: center;
+  color: white;
+  margin: auto;
 }
 
 .modal-header {
   background-color: #b9a9f7;
   padding: 1rem;
-  color: white;
+  color: black;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+ 
 }
 
 .modal-body {
@@ -805,7 +822,6 @@ textarea::placeholder {
 .closeCarthaBtn,
 .closeSsBtn {
   color: #fff;
-  float: right;
   font-size: 2.5rem;
 }
 
@@ -1140,7 +1156,9 @@ closeBtn:focus,
   .description-flex-container {
     margin-top: 30px;
     text-align: center;
+    margin: auto;
   }
+
   .timeline__button {
     display: block;
   }
@@ -1176,7 +1194,7 @@ closeBtn:focus,
 
   .modal-header h2,
   .modal-footer h3 {
-    margin: 0;
+    margin: auto;
     text-align: center;
   }
 
@@ -1298,4 +1316,32 @@ closeBtn:focus,
   .arrow-container {
     display: block;
   }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: transparent;
+  color: rgb(29, 29, 29);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
