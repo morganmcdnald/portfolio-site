@@ -6,7 +6,7 @@
 /* ===== VARIABLES CSS ===== */
 :root {
   --header-height: 3rem;
-  --header-height-scroll: 2.9rem;
+  --header-height-scroll: 3.2rem;
 
   /* ===== Colours ===== */
   --first-color: #88ddf7;
@@ -82,6 +82,23 @@ body {
   background-color: var(--background-pink);
   color: var(--text-color);
   line-height: 1.6;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: var(--first-color);
 }
 
 h1,
@@ -275,16 +292,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
-  background: rgba(123, 111, 113, 0.7);
-  border-radius: 0.5rem;
+  padding: 0.25rem;
+  background: rgba(136,221,247, 0.75);
+  border-radius: 0.25rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
   visibility: hidden;
 }
 
 .scrolltop:hover {
-  background-color: var(--first-color);
+  background-color:rgba(192, 130, 189, 0.75);
 }
 
 .scrolltop__icon {
