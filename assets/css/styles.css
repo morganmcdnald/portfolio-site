@@ -12,7 +12,7 @@
   --first-color: #88ddf7;
   --first-color-dark: #56008f;
   --footer-color: #272727;
-  --text-color: #524748;
+  --text-color: #484848;
   --first-color-light: #bad3e7;
   --first-color-pink: #f2e2f8;
   --first-color-lighten: #fbf9f9;
@@ -438,6 +438,7 @@ img {
 /* ===== ABOUT ===== */
 .about__data {
   text-align: center;
+  
 }
 
 .about__data span {
@@ -1323,7 +1324,7 @@ closeBtn:focus,
   display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tooltiptext, .tooltip .tooltiptext__img {
   visibility: hidden;
   width: 120px;
   background-color: transparent;
@@ -1337,11 +1338,18 @@ closeBtn:focus,
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: 100%;
   left: 50%;
   margin-left: -60px;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip .tooltiptext {
+  top: 100%;
+}
+
+.tooltip .tooltiptext__img {
+  top: 75%;
+}
+
+.tooltip:hover .tooltiptext, .tooltip:hover .tooltiptext__img {
   visibility: visible;
 }
