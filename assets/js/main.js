@@ -7,6 +7,9 @@ const showMenu = (toggleId,navId) => {
     toggle.addEventListener('click', ()=> {
       nav.classList.toggle('show-menu')
     })
+    toggle.addEventListener('click', ()=> {
+      toggle.classList.toggle('active')
+    })
   }
 }
 
@@ -121,3 +124,51 @@ gsap.from('.home__title, .home__subtitle, .home-social-icons, .arrow-container',
 
 gsap.from('.nav__logo, .nav__toggle', {opacity: 0, duration: 2, delay:.75, y:50, ease:'expo.out', stagger:.2})
 gsap.from('.nav__item', {opacity: 0, duration: 2, delay:1, y:50, ease:'expo.out', stagger:.2})
+
+function animateFrom(elem, direction) {
+  direction = direction | 1;
+  
+  var x = 0,
+      y = direction * 100;
+  if(elem.classList.contains("gs_reveal_fromLeft")) {
+    x = -100;
+    y = 0;
+  } else if(elem.classList.contains("gs_reveal_fromRight")) {
+    x = 100;
+    y = 0;
+  } else if (elem.classList.contains("gs_reveal_fromBottom")) {
+    x = 0;
+    y = 100;
+  } else if (elem.classList.contains("gs_reveal_fromTop")) {
+    x = 0;
+    y = -100;
+  }
+  gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+    duration: 2.25,
+    delay: .5, 
+    x: 0,
+    y: 0, 
+    autoAlpha: 1, 
+    ease: "expo", 
+    overwrite: "auto"
+  });
+}
+
+function hide(elem) {
+  gsap.set(elem, {autoAlpha: 0});
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  gsap.registerPlugin(ScrollTrigger);
+  
+  gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+    hide(elem); // assure that the element is hidden when scrolled into view
+    
+    ScrollTrigger.create({
+      trigger: elem,
+      onEnter: function() { animateFrom(elem) }, 
+      onEnterBack: function() { animateFrom(elem, -1) },
+      onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+    });
+  });
+});
