@@ -852,12 +852,12 @@ textarea::placeholder {
 .modal-header h2,
 .modal-footer h3 {
   text-align: center;
-  color: white;
+  color: rgb(22, 100, 163);
   margin: auto;
 }
 
 .modal-header {
-  background-color: #b9a9f7;
+  background-color: #c4f1ff;
   padding: 1rem;
   color: black;
   display:flex;
@@ -888,11 +888,11 @@ textarea::placeholder {
 
 .modal-body .tech {
   font-size: 2.25rem;
-  color: #463463;
+  color: #8f5faf;
 }
 
 .modal-footer {
-  background-color: #b9a9f7;
+  background-color: #c4f1ff;
   padding: 1rem;
   color: #fff;
 }
@@ -903,7 +903,7 @@ textarea::placeholder {
 
 .modal-links a {
   padding: 0 2rem;
-  color: #463463;
+  color: rgb(22, 100, 163);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
@@ -920,7 +920,7 @@ textarea::placeholder {
 .closeAppBtn,
 .closeCarthaBtn,
 .closeSsBtn {
-  color: #fff;
+  color: rgb(22, 100, 163);
   font-size: 2.5rem;
 }
 
