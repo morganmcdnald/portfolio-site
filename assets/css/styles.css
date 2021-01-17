@@ -925,7 +925,7 @@ textarea::placeholder {
 }
 
 .closeBtn:hover,
-closeBtn:focus,
+.closeBtn:focus,
 .closeDickBtn:hover,
 .closeDickBtn:focus,
 .closeBkbBtn:hover,
@@ -1311,9 +1311,7 @@ closeBtn:focus,
   }
 
   .modal-header {
-    background-color: #b9a9f7;
     padding: 1rem;
-    color: white;
   }
 
   .modal-body {
