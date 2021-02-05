@@ -79,7 +79,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  background-color: var(--background-pink);
+  background-color: #ffffff;
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -1467,4 +1467,12 @@ textarea::placeholder {
   opacity: 0;
   visibility: hidden;
   transition: transform 0s;
+}
+
+.works-item img {
+  width: 25vw;
+}
+
+.container {
+  width: 1600px;
 }

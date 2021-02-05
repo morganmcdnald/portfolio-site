@@ -17,7 +17,7 @@
     <link rel="icon" href="images/logo.png" />
 
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/mainStyles.css" />
     <title>Morgan McDonald - Web Designer & Developer Based in Glasgow</title>
   </head>
   <body>
@@ -26,610 +26,507 @@
       <i class="bx bxs-chevron-up scrolltop__icon"></i>
     </a>
 
-    <!-- ===== HEADER ===== -->
-    <header class="l-header" id="header">
-      <nav class="nav bd-container">
-        <a href="" class="nav__logo">MORGAN<span>MCDONALD</span></a>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+    <header>
+      <div class="nav-container">
+        <nav class="nav">
+          <a href="#hero" class="logo"><span>MORGAN</span>MCDONALD</a>
+          <ul class="nav-list">
+            <li>
+              <a href="#hero" class="nav-link">Home</a>
             </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">Portfolio</a>
+            <li>
+              <a href="#services" class="nav-link">Services</a>
             </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+            <li>
+              <a href="#works" class="nav-link">Works</a>
             </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">Services</a>
+            <li>
+              <a href="#about" class="nav-link">About</a>
             </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu-alt-right icon1"></i>
-          <i class='bx bx-x icon2'></i>
-        </div>
-      </nav>
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </nav>
+      </div>
     </header>
+    <nav class="mobile-nav">
+      <a href="#hero" class="mobile-link-home">Home</a>
+      <a href="#services" class="mobile-link-services">Services</a>
+      <a href="#works" class="mobile-link-works">Works</a>
+      <a href="#about" class="mobile-link-about">About</a>
+      <a href="#contact" class="mobile-link-contact">Contact</a>
+    </nav>
 
-    <main class="l-main">
-      <!-- ===== HOME ===== -->
-      <section class="home" id="home">
-        <div class="home__container bd-container ds-grid">
-          <div class="home__text">
-            <h1 class="home__title">MORGAN MCDONALD</h1>
-            <h2 class="home__subtitle">
-              DEVELOPER. DESIGNER. FREELANCER. STUDENT.
-            </h2>
-          </div>
-
-          <div class="social-icons home-social-icons">
-            <a href="https://twitter.com/morganmcdee13"
-              ><i class="bx bxl-twitter"></i
-            ></a>
-            <a href="https://github.com/morganmcdnald/"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a href="https://www.instagram.com/morgandzns/?hl=en"
-              ><i class="bx bxl-instagram"></i
-            ></a>
-          </div>
-
-          <div class="arrow-container">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <a href="#portfolio"><span class="text">Scroll down</span></a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== PORTFOLIO ===== -->
-      <section class="portfolio section bd-container" id="portfolio">
-        <span class="section-subtitle">Some Recent Works</span>
-        <h2 class="section-title">Portfolio</h2>
-
-        <div class="portfolio__nav">
-          <span class="portfolio__item active-portfolio" data-filter="all"
-            >All</span
-          >
-          <span class="portfolio__item" data-filter=".design">UI/UX</span>
-          <span class="portfolio__item" data-filter=".personal"
-            >Personal Projects</span
-          >
-          <span class="portfolio__item" data-filter=".college"
-            >College Projects</span
-          >
+    <section class="hero" id="hero">
+      <div class="home__container bd-container ds-grid">
+        <div class="home__text">
+          <h1 class="home__title">MORGAN MCDONALD</h1>
+          <h2 class="home__subtitle">
+            DEVELOPER. DESIGNER. FREELANCER. STUDENT.
+          </h2>
         </div>
 
-        <div id="simpleModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2>Bioregioning Clyde Website</h2>
-              <span class="closeBtn">&times;</span>
-            </div>
-            <div class="modal-body">
-              <img
-              src="/assets/img/Portfolio-Images/BioClyde.png"
-                alt=""
-                class="slider-image"
-              />
-              <p>
-                Bioregioning Clyde is a local company for whom I done my first
-                freelance project. It is currently around 80% complete, we are
-                only waiting on the company supplying the final parts of the
-                content in order to finish completely.
-              </p>
-              <h4>Status: ONGOING</h4>
-              <h4>Technologies Used</h4>
-              <div class="tech">
-                <i class="bx bxl-html5"></i>
-                <i class="bx bxl-css3"></i>
-                <i class="bx bxl-javascript"></i>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="modal-links">
-                <a href="https://github.com/M2WebSolutions/BioregioningClyde"
-                  >Source Code</a
-                >
-                <a href="https://bioregioningclydetest.netlify.app/"
-                  >Live Site</a
-                >
-              </div>
-            </div>
-          </div>
+        <div class="social-icons home-social-icons">
+          <a href="https://github.com/morganmcdnald/"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.behance.net/morganmcdonald13"
+            ><i class="bx bxl-behance"></i
+          ></a>
+          <a href="https://www.instagram.com/morgandzns/?hl=en"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://twitter.com/morganmcdee13"
+            ><i class="bx bxl-twitter"></i
+          ></a>
         </div>
 
-        <div id="dickinsonModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2>Dickinson UI Design</h2>
-              <span class="closeDickBtn">&times;</span>
-            </div>
-            <div class="modal-body">
-              <img
-                src="/assets/img/Portfolio-Images/Dickinson1.png"
-                alt=""
-                class="slider-image"
-              />
-              <p>
-                Dickinson is a popular TV show produced and aired on Apple TV.
-                In light of the season 2 being released, I tried my hand at
-                creating a UI design for a website for the show.
-              </p>
-              <h4>Status: ONGOING</h4>
-              <h4>Technologies Used</h4>
-              <div class="tech">
-                <i class="bx bxl-figma"></i>
-                <i class="bx bxl-adobe"></i>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="modal-links">
-                <a href="#portfolio">Figma Designs - Desktop</a>
-                <a href="#portfolio">Figma Demo - Mobile</a>
-              </div>
-            </div>
-          </div>
+        <div class="arrow-container">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <a href="#services"><span class="text">Scroll down</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="title">
+          <h1>Services</h1>
+          <h4>What I Have to Offer</h4>
+          <br />
+          <br />
+          <p>
+            My services cover a range of subjects within the Web Development
+            field. From design to hosting and everything inbetween, I can create
+            an afforsable site to suit your needs.
+          </p>
         </div>
 
-        <div id="bkbModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2>Bike King Borders Website</h2>
-              <span class="closeBkbBtn">&times;</span>
-            </div>
-            <div class="modal-body">
-              <img
-                src="/assets/img/Portfolio-Images/BKB.png"
-                alt=""
-                class="slider-image"
-              />
-              <p>
-                Bike King Borders is a site I did as part of my Introduction to
-                HTML and CSS module at college. The aim was to create a
-                front-end site for a fictional bicycle store with no back-end
-                functionality.
-              </p>
-              <h4>Status: COMPLETE</h4>
-              <h4>Technologies Used</h4>
-              <div class="tech">
-                <i class="bx bxl-html5"></i>
-                <i class="bx bxl-css3"></i>
-                <i class="bx bxl-javascript"></i>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="modal-links">
-                <a href="https://github.com/morganmcdnald/bikekingborders"
-                  >Source Code</a
-                >
-                <a href="https://bikekingborders.netlify.app/">Live Site</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="appModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2>Hammond Realty Redesign</h2>
-              <span class="closeAppBtn">&times;</span>
-            </div>
-            <div class="modal-body">
-              <img
-              src="/assets/img/Portfolio-Images/HammondPlaceholder.png"
-                alt=""
-                class="slider-image"
-              />
-              <p>
-                This is a UI Design I did for the fictional 'Hammond Realty' Real Estate agency from the TV show 'Santa Clarita Diet'.
-                This is not a real website or for a real client, but I created it as though it was.
-              </p>
-              <h4>Status: ONGOING</h4>
-              <h4>Technologies Used</h4>
-              <div class="tech">
-                <i class="bx bxl-figma"></i>
-                <i class="bx bxl-adobe"></i>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="modal-links">
-                <a href="#portfolio">Figma Designs - Desktop</a>
-                <a href="#portfolio">Figma Demo - Mobile</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="carthaModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2>Cartha Cobras Rugby Website</h2>
-              <span class="closeCarthaBtn">&times;</span>
-            </div>
-            <div class="modal-body">
-              <img
-                src="/assets/img/Portfolio-Images/Cartha.png"
-                alt=""
-                class="slider-image"
-              />
-              <p>
-                Cartha Cobras are a local youth rugby team, playing out of
-                Pollock Park. I was hired to create a website for them on
-                WordPress, which I will first create in HTML and CSS before
-                converting to a WordPress template.
-              </p>
-              <h4>Status: ONGOING</h4>
-              <h4>Technologies Used</h4>
-              <div class="tech">
-                <i class="bx bxl-html5"></i>
-                <i class="bx bxl-css3"></i>
-                <i class="bx bxl-javascript"></i>
-                <i class="bx bxl-wordpress"></i>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="modal-links">
-                <a href="https://github.com/M2WebSolutions/CarthaRugby"
-                  >Source Code</a
-                >
-                <a href="#portfolio">Live Site</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="ssModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2>SmolScreen Web App</h2>
-              <span class="closeSsBtn">&times;</span>
-            </div>
-            <div class="modal-body">
-              <img
-                src="/assets/img/Portfolio-Images/SmolScreen.png"
-                alt=""
-                class="slider-image"
-              />
-              <p>
-                SmolScreen is my first attempt at a full-stack web application.
-                It's intention was to act as a 'Letterboxd' app clone with a UI
-                that I designed myself.
-                Currently, designs are complete and can be viewed by the link below. Development is ongoing and links will be updated when ready.
-              </p>
-              <h4>Status: ONGOING</h4>
-              <h4>Technologies Used</h4>
-              <div class="tech">
-                <i class="bx bxl-figma"></i>
-                <i class="bx bxl-html5"></i>
-                <i class="bx bxl-css3"></i>
-                <i class="bx bxl-javascript"></i>
-                <i class="bx bxl-python"></i>
-                <i class="bx bxl-django"></i>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="modal-links">
-                <a href="https://www.behance.net/gallery/111522109/SmolScreen-Web-App-Design">Figma Designs</a>
-                <a href="#portfolio">Source Code</a>
-                <a href="#portfolio">Live Site</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio__container bd-grid">
-          <div class="portfolio__content mix personal">
-            <a
-              ><img
-                src="/assets/img/Portfolio-Images/SmolScreen.png"
-                alt=""
-                class="portfolio__img"
-            /></a>
-            <div class="portfolio__data" id="ssBtn">
-              <span class="portfolio__subtitle">Personal Project</span>
-              <a><h2 class="portfolio__title">SmolScreen Web App</h2></a>
-              <a class="button button-link portfolio-button"
-                >View Details<i class="bx bx-right-arrow-alt"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="portfolio__content mix personal">
-            <a
-              ><img
-              src="/assets/img/Portfolio-Images/BioClyde.png"
-                alt=""
-                class="portfolio__img"
-            /></a>
-            <div class="portfolio__data" id="modalBtn">
-              <span class="portfolio__subtitle">Personal Project</span>
-              <a><h2 class="portfolio__title">Bioregioning Clyde Site</h2></a>
-              <a class="button button-link portfolio-button" id="modalBtn"
-                >View Details<i class="bx bx-right-arrow-alt"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="portfolio__content mix college">
-            <a
-              ><img
-                src="/assets/img/Portfolio-Images/BKB.png"
-                alt=""
-                class="portfolio__img"
-            /></a>
-            <div class="portfolio__data" id="bkbBtn">
-              <span class="portfolio__subtitle">College Project</span>
-              <a><h2 class="portfolio__title">Bike King Borders Site</h2></a>
-              <a class="button button-link portfolio-button"
-                >View Details<i class="bx bx-right-arrow-alt"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="portfolio__content mix college">
-            <a
-              ><img
-                src="/assets/img/Portfolio-Images/Cartha.png"
-                alt=""
-                class="portfolio__img"
-            /></a>
-            <div class="portfolio__data" id="carthaBtn">
-              <span class="portfolio__subtitle">College Project</span>
-              <a><h2 class="portfolio__title">Cartha Cobras Rugby Site</h2></a>
-              <a class="button button-link portfolio-button"
-                >View Details<i class="bx bx-right-arrow-alt"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="portfolio__content mix design">
-            <a
-              ><img
-                src="/assets/img/Portfolio-Images/Dickinson1.png"
-                alt=""
-                class="portfolio__img"
-            /></a>
-            <div class="portfolio__data" id="dickinsonBtn">
-              <span class="portfolio__subtitle">UI Design</span>
-              <a><h2 class="portfolio__title">Dickinson UI Design</h2></a>
-              <a class="button button-link portfolio-button"
-                >View Details<i class="bx bx-right-arrow-alt"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="portfolio__content mix design">
-            <a
-              ><img
-                src="/assets/img/Portfolio-Images/HammondPlaceholder.png"
-                alt=""
-                class="portfolio__img"
-            /></a>
-            <div class="portfolio__data" id="appBtn">
-              <span class="portfolio__subtitle">UI Design</span>
-              <a><h2 class="portfolio__title">Hammond Realty Redesign</h2></a>
-              <a class="button button-link portfolio-button"
-                >View Details<i class="bx bx-right-arrow-alt"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== ABOUT ===== -->
-      <section class="about section bd-container" id="about">
-        <span class="section-subtitle uppercase">Get To Know Me</span>
-        <h2 class="section-title">About Me</h2>
-
-  
-
-        <div class="about__container bd-grid">
-          <div class="about__data gs_reveal gs_reveal_fromLeft">
-            <h3 class="about_title">My History</h3>
-            <p class="about__description about__description__bio">
-              I am a Computer Science Graduate from
-              Glasgow qualified to BA degree level who is currently progressing
-              towards becoming a Front-End Web Developer and Designer. My
-              passion lies within the front-end section, focusing on design. I
-              am currently undertaking a HND qualification within Web
-              Engineering, with sights to complete. I am a solid multitasker and
-              have a strong attention to detail, as well as experience brought
-              with me from my educational and professional careers.
-            </p>
-          </div>
-
-          <div class="about__data  gs_reveal gs_reveal_fromRight">
-            <h3 class="about_title">My Development Skills</h3>
-            <p class="about__description about__description__skills">
-              <div class="about__skills">
-                <i class="bx bxl-html5 tooltip"><span class="tooltiptext">HTML5</span></i>
-                <i class="bx bxl-css3 tooltip"><span class="tooltiptext">CSS3</span></i>
-                <i class="bx bxl-javascript tooltip"><span class="tooltiptext">JavaScript</span></i>
-                <i class="bx bxl-python tooltip"><span class="tooltiptext">Python</span></i>
-                <div class="tooltip">
-                  <img src="/assets/img/icons8-java-50.png" style="padding-bottom: 3px; width: 3.75rem; height:2.75rem;">
-                  <span class="tooltiptext__img">Java</span>
-                </div>
-                <i class="bx bxl-django tooltip"><span class="tooltiptext">Django</span></i>
-                <i class="bx bxl-sass tooltip"><span class="tooltiptext">SASS</span></i>
-                <i class="bx bxl-jquery tooltip"><span class="tooltiptext">jQuery</span></i>
-                <i class="bx bxl-wordpress tooltip"><span class="tooltiptext">WordPress</span></i>
-                <div class="tooltip">
-                  <img src="/assets/img/icons8-php-logo-50.png">
-                  <span class="tooltiptext__img">PHP</span>
-                </div>
-                <i class="bx bxl-vuejs tooltip"><span class="tooltiptext">Vue.js</span></i>
-              </div>
-            </p>
-            <br>
-            <h3 class="about_title">My Design Skills</h3>
-            <p class="about__description">
-              <div class="about__skills__design">
-                <i class="bx bxl-figma tooltip"><span class="tooltiptext">Figma</span></i>
-                <!-- <i class="bx bxl-adobe"></i> -->
-                <div class="tooltip">
-                  <img src="/assets/img/adobe-photoshop (1).png">
-                  <span class="tooltiptext__img">Photoshop</span>
-                </div>
-                <div class="tooltip">
-                  <img src="/assets/img/adobe-illustrator.png">
-                  <span class="tooltiptext__img">Illustrator</span>
-                </div>
-              </div>
-            </p>
-
-          </div>
-        </div>
-
-
-            <button type="submit" onclick="window.open('/assets/pdf/MorganMcDonaldCV.pdf')" class="download-button fade gs_reveal gs_reveal_fromLeft">Download My CV</button>
-
-            <!-- Timeline -->
-            <div class="timeline-container gs_reveal gs_reveal_fromRight">
-              <h2 class="timeline-title">My Story So Far</h2>
-            <span class="section-subtitle uppercase timeline-sub">Click along the timeline to read about my academic journey.</span>
-
-            <button class="button timeline__button" onclick="showTimeline()">View Timeline</button>
-              <div class="flex-parent" id="flex-parent">
-                <div class="input-flex-container">
-                  <div class="input">
-                    <span data-year="June 2015" data-info="Secondary"></span>
-                  </div>
-                  <div class="input">
-                    <span data-year="Aug 2015" data-info="HND Comp Sci"></span>
-                  </div>
-                  <div class="input">
-                    <span data-year="June 2017" data-info="HND Complete"></span>
-                  </div>
-                  <div class="input">
-                    <span data-year="Aug 2017" data-info="BSc Comp Sci"></span>
-                  </div>
-                  <div class="input">
-                    <span data-year="June 2019" data-info="BSc Complete"></span>
-                  </div>
-                  <div class="input">
-                    <span data-year="Aug 2019" data-info="PGDE Secondary"></span>
-                  </div>
-                  <div class="input">
-                    <span data-year="Jan 2020" data-info="PGDE End"></span>
-                  </div>
-                  <div class="input active">
-                    <span data-year="Aug 2020" data-info="HND Start"></span>
-                  </div>
-                  <div class="input">
-                    <span data-year="June 2021" data-info="HND Complete"></span>
-                  </div>
-                  <div class="input">
-                    <span data-year="2021-?" data-info="Future"></span>
-                  </div>
-                </div>
-                <div class="description-flex-container">
-                  <p>
-                    Finished Secondary School, Leaving with 6 Highers and 1
-                    Advanced Higher
-                  </p>
-                  <p>
-                    In 2015 I began my first HND, starting with Cyber Security
-                    before settling on Computer Science.
-                  </p>
-                  <p>
-                    In June 2017 I finished up my HND where I left with an A in
-                    both Graded Units.
-                  </p>
-                  <p>
-                    The following August I started my BSc Computing Science at the
-                    University of Glasgow, fast tracking due to my HND.
-                  </p>
-                  <p>
-                    2 years later I graduated university with a BSc in Computing
-                    Science.
-                  </p>
-                  <p>
-                    That August I began a PGDE in Secondary Education at the
-                    University of Glasgow with views to become a Computing
-                    teacher.
-                  </p>
-                  <p>
-                    After 4 months I left the PGDE course in January 2020 after
-                    realising I was going down the wrong route. Used the following
-                    months to work and learn web development skills.
-                  </p>
-                  <p class="active">
-                    In August 2020 I began my HND Web Engineering in order to
-                    learn more about web design and development.
-                  </p>
-                  <p>
-                    I am scheduled to finish my first year of my HND in June 2021.
-                    Up next is year 2 or full time employment.
-                  </p>
-                  <p>
-                    After completing this year at college, my aim is to find a
-                    full time job in Front-End Development or Design.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-      </section>
-
-      <!-- ===== SERVICES ===== -->
-      <section class="services section bd-container" id="services">
-        <span class="section-subtitle">What I Offer</span>
-        <h2 class="section-title">Services</h2>
-
-        <div class="services__container bd-grid gs_reveal gs_reveal_fromLeft">
-          <div class="services__data">
-            <i class="bx bx-pen services__icon"></i>
-            <h3 class="services_title">UI/UX Design</h3>
-            <p class="services__description">
-              I can design you a site or app based on your requirements,
-              progressing from wireframe to functional prototype.
-            </p>
-          </div>
-
+        <div class="services-container">
           <div class="services__data">
             <i class="bx bx-code-alt services__icon"></i>
-            <h3 class="services_title">Web Development</h3>
+            <h3 class="services_title">Responsive Web Development</h3>
             <p class="services__description">
-              With my design or your own, I can build you a fully functional
-              website either from scratch or using WordPress.
+              Now with mobiles making up around 60% of web traffic, I can build
+              you a site that is adaptable to any screen size so its accessible
+              to all without issues.
             </p>
           </div>
 
           <div class="services__data">
-            <i class="bx bx-data services__icon"></i>
-            <h3 class="services_title">Website Management</h3>
+            <i class="bx bx-pen services__icon"></i>
+            <h3 class="services_title">UI/UX & Graphic Design</h3>
             <p class="services__description">
-              After I build your site, I can optionally handle the hosting and
-              management of the site for an additional cost.
+              I can design you a site or app based on your requirements,
+              progressing from wireframe to functional prototype. I can also
+              help you build a brand which will increase traffic.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-laptop services__icon"></i>
+            <h3 class="services_title">Hosting & Management</h3>
+            <p class="services__description">
+              After building your site, I can also handle the hosting, domain
+              and management of the site for an additional cost, including an
+              SSL Certificate and emails.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bxs-data services__icon"></i>
+            <h3 class="services_title">Content Management System</h3>
+            <p class="services__description">
+              I can build you a site using WordPress, which has an easily
+              managable content management system accessed via admin panel for
+              your own continuous management.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-basket services__icon"></i>
+            <h3 class="services_title">eCommerce</h3>
+            <p class="services__description">
+              I am able to create you your own robust eCommerce site to help
+              your business thrive, building an online presence and increasing
+              traffic and sales.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-search services__icon"></i>
+            <h3 class="services_title">SEO</h3>
+            <p class="services__description">
+              Search Engine Optimisation will increase your site's visibility
+              and presence on the web, increasing traffic and bringing you in
+              more visitors.
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      
+    <section id="works">
+      <div class="container">
+        <div class="title">
+          <h1>Works</h1>
+          <h4>A Selection of my Recent Works</h4>
+        </div>
 
-      <!-- ===== CONTACT ===== -->
-      <section class="contact section bd-container" id="contact">
-        <span class="section-subtitle">For Projects</span>
-        <h2 class="section-title">Contact Me</h2>
+        <br />
+        <br />
 
-        <div class="contact__container bd-grid gs_reveal gs_reveal_fromRight">
+        <div class="works-container">
+          <div class="left-side">
+            <img
+              src="/assets/img/Portfolio-Images/HammondMockup.png"
+              alt=""
+              class="works-image"
+            />
+          </div>
+
+          <div class="middle-col"></div>
+
+          <div class="right-side">
+            <div class="work-details">
+              <h2>Hammond Realty Web App (Complete)</h2>
+              <h3>Description:</h3>
+              <p>
+                This is a Full-Stack app I created for the fictional 'Hammond
+                Realty' Real Estate Agency from the TV show 'Santa Clarita
+                Diet'. This is not a real website or for a real client but I
+                went through the process as if it was.
+              </p>
+              <p>
+                I started off creating the UI designs in Figma before moving to
+                development. These designs can be found on my Behance using the
+                link below.
+              </p>
+              <p>
+                For development, I created the web app using the Python
+                framework Django. I also used Bootstrap for the development of
+                the front-end interface, which I customised. For the database of
+                the site I used PostgreSQL.
+              </p>
+              <br />
+              <h3>Technologies Used:</h3>
+              <i class="bx bxl-django tooltip"
+                ><span class="tooltiptext">Django</span></i
+              >
+              <i class="bx bxl-python tooltip"
+                ><span class="tooltiptext">Python</span></i
+              >
+              <i class="bx bxl-html5 tooltip"
+                ><span class="tooltiptext">HTML5</span></i
+              >
+              <i class="bx bxl-css3 tooltip"
+                ><span class="tooltiptext">CSS3</span></i
+              >
+              <i class="bx bxl-javascript tooltip"
+                ><span class="tooltiptext">JavaScript</span></i
+              >
+              <i class="bx bxl-bootstrap tooltip"
+                ><span class="tooltiptext">Bootstrap</span></i
+              >
+              <br />
+              <br />
+              <br />
+              <p>
+                Note: Since the site is hosted on Heroku's free tier, load times
+                will likely be longer than usual.
+              </p>
+              <br />
+
+              <div class="work-btns">
+                <a href="#">View Designs</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/morganmcdnald/HammondRealtyComplete"
+                  >View GitHub</a
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://hammondrealty.herokuapp.com/">View Demo Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="works-container">
+          <div class="left-side-alt">
+            <img
+              src="/assets/img/Portfolio-Images/SmolScreenMockup.png"
+              alt=""
+              class="works-image"
+            />
+          </div>
+
+          <div class="middle-col-hidden"></div>
+
+          <div class="left-side">
+            <div class="work-details">
+              <h2>SmolScreen Web App (In Progress)</h2>
+              <h3>Description:</h3>
+              <p>
+                This is a Full-Stack app I created that acts as a sort of clone
+                of the 'Letterboxd' website and app. Letterboxd is a sort of
+                social media that is used by film-fans to keep track of movies
+                they have seen, keep a wishlist and write reviews.
+              </p>
+              <p>
+                I started off creating the UI designs in Figma before moving to
+                development. These designs can be found on my Behance using the
+                link below.
+              </p>
+              <p>
+                For development, I created the web app using the Python
+                framework Django. I also used Bootstrap for the development of
+                the front-end interface, which I customised. For the database of
+                the site I used PostgreSQL. For the movie data, I made use of
+                the OMDB API.
+              </p>
+              <br />
+              <h3>Technologies Used:</h3>
+              <i class="bx bxl-django tooltip"
+                ><span class="tooltiptext">Django</span></i
+              >
+              <i class="bx bxl-python tooltip"
+                ><span class="tooltiptext">Python</span></i
+              >
+              <i class="bx bxl-html5 tooltip"
+                ><span class="tooltiptext">HTML5</span></i
+              >
+              <i class="bx bxl-css3 tooltip"
+                ><span class="tooltiptext">CSS3</span></i
+              >
+              <i class="bx bxl-javascript tooltip"
+                ><span class="tooltiptext">JavaScript</span></i
+              >
+              <i class="bx bxl-bootstrap tooltip"
+                ><span class="tooltiptext">Bootstrap</span></i
+              >
+              <br />
+              <br />
+              <br />
+              <p>
+                Note: Since the site is hosted on Heroku's free tier, load times
+                will likely be longer than usual.
+              </p>
+              <br />
+
+              <div class="work-btns">
+                <a
+                  href="https://www.behance.net/gallery/111522109/SmolScreen-Web-App-Design"
+                  >View Designs</a
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">View GitHub</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">View Demo Site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle-col-alt"></div>
+
+          <div class="right-side-alt">
+            <img
+              src="/assets/img/Portfolio-Images/SmolScreenMockup.png"
+              alt=""
+              class="works-image"
+            />
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="works-container">
+          <div class="left-side">
+            <img
+              src="/assets/img/Portfolio-Images/CarthaMockup.png"
+              alt=""
+              class="works-image"
+            />
+          </div>
+
+          <div class="middle-col"></div>
+
+          <div class="right-side">
+            <div class="work-details">
+              <h2>Cartha Cobras Rugby Site (In Progress)</h2>
+              <h3>Description:</h3>
+              <p>
+                Cartha Cobras are a local youth rugby team and I was hired to
+                create a new website for them. The client requested a WordPress
+                site to make use of the managable admin panel.
+              </p>
+              <p>
+                To start off, I created a static site using just HTML, CSS and
+                JS as that is what I was most comfortable with. Once both I and
+                the client were happy with how the site looked, I converted the
+                site over into a custom WordPress theme for them to use.
+              </p>
+              <br />
+              <h3>Technologies Used:</h3>
+              <i class="bx bxl-html5 tooltip"
+                ><span class="tooltiptext">HTML5</span></i
+              >
+              <i class="bx bxl-css3 tooltip"
+                ><span class="tooltiptext">CSS3</span></i
+              >
+              <i class="bx bxl-javascript tooltip"
+                ><span class="tooltiptext">JavaScript</span></i
+              >
+              <i class="bx bxl-wordpress tooltip"
+                ><span class="tooltiptext">WordPress</span></i
+              >
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <div class="work-btns">
+                <a href="#">View Designs</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/M2WebSolutions/CarthaRugby"
+                  >View GitHub</a
+                >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://cartharugby.netlify.app/">View Demo Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="view-all">
+          <a href="#">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="title">
+          <h1>About</h1>
+          <h4>Learn About Me & My Skills</h4>
+        </div>
+
+        <div class="about-container">
+          <h3>My History:</h3>
+          <p>
+            I am a Computer Science Graduate from Glasgow qualified to BA degree
+            level who is currently progressing towards becoming a Front-End Web
+            Developer and Designer. My passion lies within the front-end
+            section, focusing on design. I am currently undertaking a HND
+            qualification within Web Engineering, with sights to complete. I am
+            a solid multitasker and have a strong attention to detail, as well
+            as experience brought with me from my educational and professional
+            careers. I am currently taking on work as a freelancer in order to
+            build my skills and experience.
+          </p>
+          <br />
+          <br />
+          <div class="skills-container">
+            <h3 class="skills-heading">My Skills:</h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="about__skills">
+              <i class="bx bxl-html5 tooltip"
+                ><span class="tooltiptext">HTML5</span></i
+              >
+              <i class="bx bxl-css3 tooltip"
+                ><span class="tooltiptext">CSS3</span></i
+              >
+              <i class="bx bxl-javascript tooltip"
+                ><span class="tooltiptext">JavaScript</span></i
+              >
+              <i class="bx bxl-python tooltip"
+                ><span class="tooltiptext">Python</span></i
+              >
+              <i class="bx bxl-django tooltip"
+                ><span class="tooltiptext">Django</span></i
+              >
+              <i class="bx bxl-figma tooltip"
+                ><span class="tooltiptext">Figma</span></i
+              >
+              <div class="tooltip">
+                <img src="/assets/img/adobe-photoshop (1).png" />
+                <span class="tooltiptext__img">Photoshop</span>
+              </div>
+              <div class="tooltip">
+                <img src="/assets/img/icons8-java-50.png" />
+                <span class="tooltiptext__img">Java</span>
+              </div>
+              <i class="bx bxl-wordpress tooltip"
+                ><span class="tooltiptext">WordPress</span></i
+              >
+              <i class="bx bxl-jquery tooltip"
+                ><span class="tooltiptext">jQuery</span></i
+              >
+              <div class="tooltip">
+                <img src="/assets/img/icons8-php-logo-50.png" />
+                <span class="tooltiptext__img">PHP</span>
+              </div>
+              <i class="bx bxl-sass tooltip"
+                ><span class="tooltiptext">SASS</span></i
+              >
+              <div class="tooltip">
+                <img src="/assets/img/adobe-illustrator.png" />
+                <span class="tooltiptext__img">Illustrator</span>
+              </div>
+              <i class="bx bxl-vuejs tooltip"
+                ><span class="tooltiptext">Vue.js</span></i
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="title">
+          <h1>Contact</h1>
+          <h4>Want To Work With Me?</h4>
+        </div>
+
+        <div class="contact-form">
           <p>
             If you are interested in contacting me for any work, please fill in
             the form below and I will get back to you ASAP.
           </p>
-
-          <!-- <form action="https://formspree.io/f/maylapap" method="POST" class="contact__form"> -->
           <form
             name="ContactForm"
             class="contact__form"
@@ -648,7 +545,7 @@
                 type="email"
                 placeholder="Email Address"
                 name="email"
-                class="contact__input"
+                class="contact__input input2"
                 required
               />
             </div>
@@ -665,18 +562,20 @@
                 type="text"
                 placeholder="Phone Number"
                 name="number"
-                class="contact__input"
+                class="contact__input input2"
               />
             </div>
 
-            <textarea
-              name="message"
-              cols="0"
-              rows="7"
-              placeholder="Message"
-              class="contact__input"
-              required
-            ></textarea>
+            <div class="contact__ta">
+              <textarea
+                name="message"
+                cols="0"
+                rows="7"
+                placeholder="Message"
+                class="contact__input"
+                required
+              ></textarea>
+            </div>
 
             <input
               type="submit"
@@ -687,11 +586,13 @@
 
           <p>
             Or Send Me an Email Directly:
-            <a href="mailto:morganmcdonalddesign@gmail.com">morganmcdonalddesign@gmail.com</a>
+            <a href="mailto:morganmcdonalddesign@gmail.com"
+              >morganmcdonalddesign@gmail.com</a
+            >
           </p>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
@@ -728,12 +629,21 @@
           <div class="footer__box">
             <p class="footer__description">Social Media Links</p>
             <div class="footer__social">
+              <a href="https://github.com/morganmcdnald/" class="footer__link"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://www.behance.net/morganmcdonald13"
+                class="footer__link"
+                ><i class="bx bxl-behance"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/morgandzns/?hl=en"
+                class="footer__link"
+                ><i class="bx bxl-instagram"></i
+              ></a>
               <a href="https://twitter.com/morganmcdee13" class="footer__link"
                 ><i class="bx bxl-twitter"></i
-              ></a>
-              <a href="https://github.com/morganmcdnald/" class="footer__link"><i class="bx bxl-github"></i></a>
-              <a href="https://www.instagram.com/morgandzns/?hl=en" class="footer__link"
-                ><i class="bx bxl-instagram"></i
               ></a>
             </div>
           </div>
@@ -764,5 +674,57 @@
 
     <!-- ===== MAIN JS ===== -->
     <script src="/assets/js/main.js"></script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle("scrolling-active", windowPosition);
+      });
+
+      window.onload = function () {
+        const menu_btn = document.querySelector(".hamburger");
+        const mobile_menu = document.querySelector(".mobile-nav");
+        const mobile_link_home = document.querySelector(".mobile-link-home");
+        const mobile_link_services = document.querySelector(
+          ".mobile-link-services"
+        );
+        const mobile_link_works = document.querySelector(".mobile-link-works");
+        const mobile_link_about = document.querySelector(".mobile-link-about");
+        const mobile_link_contact = document.querySelector(
+          ".mobile-link-contact"
+        );
+
+        menu_btn.addEventListener("click", function () {
+          menu_btn.classList.toggle("is-active");
+          mobile_menu.classList.toggle("is-active");
+        });
+
+        mobile_link_home.addEventListener("click", function () {
+          menu_btn.classList.toggle("is-active");
+          mobile_menu.classList.toggle("is-active");
+        });
+
+        mobile_link_services.addEventListener("click", function () {
+          menu_btn.classList.toggle("is-active");
+          mobile_menu.classList.toggle("is-active");
+        });
+
+        mobile_link_works.addEventListener("click", function () {
+          menu_btn.classList.toggle("is-active");
+          mobile_menu.classList.toggle("is-active");
+        });
+
+        mobile_link_about.addEventListener("click", function () {
+          menu_btn.classList.toggle("is-active");
+          mobile_menu.classList.toggle("is-active");
+        });
+
+        mobile_link_contact.addEventListener("click", function () {
+          menu_btn.classList.toggle("is-active");
+          mobile_menu.classList.toggle("is-active");
+        });
+      };
+    </script>
   </body>
 </html>
